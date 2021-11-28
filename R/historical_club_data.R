@@ -17,8 +17,8 @@ historical_club_data <- function(leagues = NULL,
   get_data <- base::expand.grid(leagues,
                                 seasons) %>%
     tibble::tibble() %>%
-    dplyr::rename(league = Var1,
-                  season = Var2) %>%
+    dplyr::rename(league = .data$Var1,
+                  season = .data$Var2) %>%
     dplyr::mutate(league_season = base::paste0(.data$league,
                                                .data$season)) %>%
     dplyr::mutate(url = base::paste0("https://www.football-data.co.uk/mmz4281/",
@@ -46,7 +46,7 @@ historical_club_data <- function(leagues = NULL,
                         .f = get_fun)
 
   fd_data <- dplyr::bind_rows(fd_data) %>%
-    dplyr::filter(!is.na(HomeTeam) & !is.na(AwayTeam))
+    dplyr::filter(!is.na(.data$HomeTeam) & !is.na(.data$AwayTeam))
 
   return(fd_data)
 
