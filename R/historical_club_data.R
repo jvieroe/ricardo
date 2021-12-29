@@ -46,8 +46,8 @@ historical_club_data <- function(leagues = NULL,
   fd_data <- purrr::map(.x = split_data,
                         .f = get_fd_fun)
 
-  lookup_vars <- c("HomeTeam" = "HT",
-                   "AwayTeam" = "AT")
+  # lookup_vars <- c("HT" = "HomeTeam",
+  #                  "AT" = "AwayTeam")
 
   fd_data <- dplyr::bind_rows(fd_data)
 
