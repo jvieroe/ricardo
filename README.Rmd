@@ -31,13 +31,5 @@ England     | League 2 | E3
 England     | Conference | E4
 
 
-```{r}
-library(ggplot2)
 
-df <- mtcars
-
-ggplot(data = df, aes(x = wt, y = mpg)) + 
-  geom_point()
-
-```
 
