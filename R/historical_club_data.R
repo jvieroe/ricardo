@@ -46,8 +46,15 @@ historical_club_data <- function(leagues = NULL,
   fd_data <- purrr::map(.x = split_data,
                         .f = get_fd_fun)
 
+  lookup_vars <- c("HomeTeam" = "HT",
+                   "AwayTeam" = "AT")
+
   fd_data <- fd_data %>%
-    x
+    dplyr::rename_with(.fn = ~lookup_vars[.x],
+                       .cols = dplyr::intersect(names(.),
+                                                names(lookup_vars)
+                                                )
+                       )
 
   fd_data <- dplyr::bind_rows(fd_data) %>%
     dplyr::filter(!is.na(.data$HomeTeam) & !is.na(.data$AwayTeam))
