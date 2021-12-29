@@ -6,7 +6,7 @@
 #' @param seasons a vector of season codes
 #' @return a `tibble` with data on historical football matches
 #' @author Jeppe Vierø
-#' @import RCurl tibble dplyr purrr
+#' @import RCurl tibble dplyr purrr janitor
 #' @export
 
 historical_club_data <- function(leagues = NULL,
