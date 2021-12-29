@@ -15,7 +15,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-# ricardo <img src='man/figures/logo.png' align="right" height="189" />
+# ricardo <img src='man/figures/logo.png' align="right" height="249" />
 
 <!-- badges: start -->
 [![CodeFactor](https://www.codefactor.io/repository/github/jvieroe/ricardo/badge)](https://www.codefactor.io/repository/github/jvieroe/ricardo)
