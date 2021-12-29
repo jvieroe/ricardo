@@ -43,3 +43,12 @@ get_fd_fun <- function(data,
     dplyr::mutate(season = data$season)
 
 }
+
+
+#' @noRd
+custom_fun_not_all_na <- function(x) any(!is.na(x))
+
+
+#' @noRd
+custom_fun_not_any_na <- function(x) all(!is.na(x))
+

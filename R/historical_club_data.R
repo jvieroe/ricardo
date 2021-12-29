@@ -58,7 +58,8 @@ historical_club_data <- function(leagues = NULL,
                        )
 
   fd_data <- fd_data %>%
-    dplyr::filter(!is.na(.data$HomeTeam) & !is.na(.data$AwayTeam))
+    dplyr::filter(!is.na(.data$HomeTeam) & !is.na(.data$AwayTeam)) %>%
+    dplyr::select(where(custom_fun_not_all_na))
 
   return(fd_data)
 
