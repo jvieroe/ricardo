@@ -58,8 +58,15 @@ historical_club_data <- function(leagues = NULL,
                        )
 
   fd_data <- fd_data %>%
+    dplyr::mutate(dplyr::across(names(.),
+                                ~ ifelse(.x == "", NA, .x)))
+
+  fd_data <- fd_data %>%
     dplyr::filter(!is.na(.data$HomeTeam) & !is.na(.data$AwayTeam)) %>%
     dplyr::select(where(custom_fun_not_all_na))
+
+  fd_data <- fd_data %>%
+    janitor::clean_names()
 
   return(fd_data)
 
