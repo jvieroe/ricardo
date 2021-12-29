@@ -5,7 +5,7 @@
 #' @param x ..
 #' @return ...
 #' @author Jeppe Vierø
-#' @import RCurl
+#' @import RCurl tibble dplyr purrr
 #' @export
 
 historical_club_data <- function(leagues = NULL,

@@ -3,4 +3,7 @@
 export("%>%")
 export(historical_club_data)
 import(RCurl)
+import(dplyr)
+import(purrr)
+import(tibble)
 importFrom(magrittr,"%>%")
