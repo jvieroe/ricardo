@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# ricardo
+# ricardo <img src='man/figures/logo.png' align="right" height="189" />
 
 <!-- badges: start -->
 
@@ -16,3 +16,14 @@
 | England | League 1       | E2   |
 | England | League 2       | E3   |
 | England | Conference     | E4   |
+
+``` r
+library(ggplot2)
+
+df <- mtcars
+
+ggplot(data = df, aes(x = wt, y = mpg)) + 
+  geom_point()
+```
+
+<img src="man/figures/README-unnamed-chunk-2-1.png" width="85%" style="display: block; margin: auto;" />
