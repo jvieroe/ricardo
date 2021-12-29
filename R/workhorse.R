@@ -39,7 +39,7 @@ get_fd_fun <- function(data,
 
   output <- utils::read.csv(url) %>%
     tibble::tibble() %>%
-    dplyr::mutate(tmp1 = data$league) %>%
-    dplyr::mutate(tmp2 = data$season)
+    dplyr::mutate(league = data$league) %>%
+    dplyr::mutate(season = data$season)
 
 }

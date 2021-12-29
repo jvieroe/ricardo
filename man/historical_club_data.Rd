@@ -2,20 +2,20 @@
 % Please edit documentation in R/historical_club_data.R
 \name{historical_club_data}
 \alias{historical_club_data}
-\title{name}
+\title{Download historical football match data}
 \usage{
 historical_club_data(leagues = NULL, seasons = NULL)
 }
 \arguments{
-\item{leagues}{...}
+\item{leagues}{a vector of league codes}
 
-\item{seasons}{...}
+\item{seasons}{a vector of season codes}
 }
 \value{
-...
+a \code{tibble} with data on historical football matches
 }
 \description{
-This function...
+This function extracts data on historical football matches from \url{https://www.football-data.co.uk/}
 }
 \author{
 Jeppe Vierø

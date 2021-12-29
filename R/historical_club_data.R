@@ -1,10 +1,10 @@
-#' name
+#' Download historical football match data
 #'
-#' This function...
+#' This function extracts data on historical football matches from \url{https://www.football-data.co.uk/}
 #'
-#' @param leagues ...
-#' @param seasons ...
-#' @return ...
+#' @param leagues a vector of league codes
+#' @param seasons a vector of season codes
+#' @return a `tibble` with data on historical football matches
 #' @author Jeppe Vierø
 #' @import RCurl tibble dplyr purrr
 #' @export
@@ -29,12 +29,12 @@ historical_club_data <- function(leagues = NULL,
                                      ".csv")) %>%
     dplyr::mutate(url_exists = RCurl::url.exists(.data$url))
 
-  if(any(get_data$url_exists == FALSE)){
-    warning("Invalid league-season combinations provided, one or more URLs don't exist. Proceeding with valid combinations")
-  }
-
   if(!any(get_data$url_exists == TRUE)){
     stop("No valid league-season combinations provided, no URLs exist")
+  }
+
+  if(any(get_data$url_exists == FALSE)){
+    warning("Invalid league-season combinations provided, one or more URLs don't exist. Proceeding with valid combinations")
   }
 
   get_data <- get_data %>%
