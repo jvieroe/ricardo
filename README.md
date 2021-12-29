@@ -7,6 +7,9 @@
 
 [![CodeFactor](https://www.codefactor.io/repository/github/jvieroe/ricardo/badge)](https://www.codefactor.io/repository/github/jvieroe/ricardo)
 [![R-CMD-check](https://github.com/jvieroe/ricardo/workflows/R-CMD-check/badge.svg)](https://github.com/jvieroe/ricardo/actions)
+[![License:
+MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://cran.r-project.org/web/licenses/MIT)
+[![](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 <!-- badges: end -->
 
 | Country | Leage          | Code |
