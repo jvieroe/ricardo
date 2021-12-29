@@ -43,7 +43,7 @@ historical_club_data <- function(leagues = NULL,
                             f = get_data$league_season)
 
   fd_data <- purrr::map(.x = split_data,
-                        .f = get_fun)
+                        .f = get_fd_fun)
 
   fd_data <- dplyr::bind_rows(fd_data) %>%
     dplyr::filter(!is.na(.data$HomeTeam) & !is.na(.data$AwayTeam))

@@ -29,3 +29,17 @@ check_url <- function(get_data) {
   # }
 
 }
+
+
+#' @noRd
+get_fd_fun <- function(data,
+                       output) {
+
+  url <- data$url
+
+  output <- utils::read.csv(url) %>%
+    tibble::tibble() %>%
+    dplyr::mutate(tmp1 = data$league) %>%
+    dplyr::mutate(tmp2 = data$season)
+
+}
