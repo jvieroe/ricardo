@@ -21,7 +21,7 @@ knitr::opts_chunk$set(
 [![CodeFactor](https://www.codefactor.io/repository/github/jvieroe/ricardo/badge)](https://www.codefactor.io/repository/github/jvieroe/ricardo)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://cran.r-project.org/web/licenses/MIT)
 [![](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
-[![](https://img.shields.io/github/last-commit/https://github.com/jvieroe/ricardo.svg)](https://github.com/https://github.com/jvieroe/ricardo/commits/main)
+[![](https://img.shields.io/github/last-commit/jvieroe/ricardo.svg)](https://github.com/jvieroe/ricardo/commits/main)
 
 Main branch:
 [![R-CMD-check](https://github.com/jvieroe/ricardo/workflows/R-CMD-check/badge.svg)](https://github.com/jvieroe/ricardo/actions)
