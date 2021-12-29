@@ -7,7 +7,9 @@
 historical_club_data(leagues = NULL, seasons = NULL)
 }
 \arguments{
-\item{x}{..}
+\item{leagues}{...}
+
+\item{seasons}{...}
 }
 \value{
 ...
