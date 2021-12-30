@@ -1,4 +1,12 @@
 #' @noRd
+custom_fun_not_all_na <- function(x) any(!is.na(x))
+
+
+#' @noRd
+custom_fun_not_any_na <- function(x) all(!is.na(x))
+
+
+#' @noRd
 check_input <- function(seasons,
                         leagues) {
 
@@ -35,20 +43,16 @@ check_url <- function(get_data) {
 get_fd_fun <- function(data,
                        output) {
 
+  tmp_league <- data$league[1]
+  tmp_season <- data$league[1]
+
   url <- data$url
 
   output <- utils::read.csv(url) %>%
     tibble::tibble() %>%
-    dplyr::mutate(league = data$league) %>%
-    dplyr::mutate(season = data$season)
+    dplyr::mutate(league = tmp_league) %>%
+    dplyr::mutate(season = tmp_season)
 
 }
 
-
-#' @noRd
-custom_fun_not_all_na <- function(x) any(!is.na(x))
-
-
-#' @noRd
-custom_fun_not_any_na <- function(x) all(!is.na(x))
 

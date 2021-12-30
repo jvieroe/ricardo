@@ -191,67 +191,6 @@ historical_club_data <- function(leagues = NULL,
     dplyr::filter(!is.na(.data$HomeTeam) & !is.na(.data$AwayTeam)) %>%
     dplyr::select(where(custom_fun_not_all_na))
 
-  # fd_data <- fd_data %>%
-  #   dplyr::select(tidyselect::any_of(c("Div",
-  #                                      "Date",
-  #                                      "HomeTeam",
-  #                                      "AwayTeam",
-  #                                      "HomeTeam",
-  #                                      "AwayTeam",
-  #                                      "full_time_home_goals",
-  #                                      "full_time_away_goals",
-  #                                      "full_time_result",
-  #                                      "half_time_home_goals",
-  #                                      "half_time_away_goals",
-  #                                      "half_time_result",
-  #                                      "shots_home",
-  #                                      "shots_away",
-  #                                      "shots_on_target_home",
-  #                                      "shots_on_target_away",
-  #                                      "shots_on_woodwork_home",
-  #                                      "shots_on_woodwork_away",
-  #                                      "corners_home",
-  #                                      "corners_away",
-  #                                      "fouls_home",
-  #                                      "fouls_away",
-  #                                      "free_kicks_conceded_home",
-  #                                      "free_kicks_conceded_way",
-  #                                      "offsides_home",
-  #                                      "offsides_away",
-  #                                      "yellow_cards_home",
-  #                                      "yellow_cards_away",
-  #                                      "red_cards_home",
-  #                                      "red_cards_away",
-  #                                      "booking_points_home",
-  #                                      "booking_points_away",
-  #                                      # ----- Betting data -----
-  #                                      # number of BetBrain bookmakers used to calculate avg.
-  #                                      'Bb1X2',
-  #                                      # Betbrain maximum home_win_odds
-  #                                      'BbMxH',
-  #                                      # Betbrain average home_win_odds
-  #                                      'BbAvH',
-  #                                      # Betbrain maximum_draw_odds
-  #                                      'BbMxD',
-  #                                      # Betbrain average draw win_odds
-  #                                      'BbAvD',
-  #                                      # Betbrain maximum_away_win_odds
-  #                                      'BbMxA',
-  #                                      # Betbrain average_away_win_odds
-  #                                      'BbAvA',
-  #                                      # market_maximum home_win_odds,
-  #                                      'MaxH',
-  #                                      # market_maximum draw win_odds
-  #                                      'MaxD',
-  #                                      # market_maximum_away_win_odds
-  #                                      'MaxA',
-  #                                      # market_average home_win_odds
-  #                                      'AvgH',
-  #                                      # market_average draw win_odds
-  #                                      'AvgD',
-  #                                      # market_average_away_win_odds
-  #                                      'AvgA')))
-
   fd_data <- fd_data %>%
     janitor::clean_names()
 
