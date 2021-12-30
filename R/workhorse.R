@@ -43,8 +43,8 @@ check_url <- function(get_data) {
 get_fd_fun <- function(data,
                        output) {
 
-  tmp_league <- data$league[1]
-  tmp_season <- data$league[1]
+  tmp_league <- data$league[1] %>% base::as.character()
+  tmp_season <- data$league[1] %>% base::as.character()
 
   url <- data$url
 
