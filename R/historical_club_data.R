@@ -192,7 +192,9 @@ historical_club_data <- function(leagues = NULL,
     dplyr::select(where(custom_fun_not_all_na))
 
   fd_data <- fd_data %>%
-    janitor::clean_names()
+    janitor::clean_names() %>%
+    dplyr::relocate(c(league, season), .before = date)
+
 
   return(fd_data)
 
