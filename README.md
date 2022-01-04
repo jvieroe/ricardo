@@ -25,6 +25,6 @@ Main branch:
 | England | Conference     | E4   |
 | Scotland | Premiership    | SC0   |
 | Scotland | Championship   | SC1   |
-| England | League 1       | SC2   |
-| England | League 2       | SC3   |
+| Scotland | League 1       | SC2   |
+| Scotland | League 2       | SC3   |
 
