@@ -27,4 +27,6 @@ Main branch:
 | Scotland | Championship   | SC1   |
 | Scotland | League 1       | SC2   |
 | Scotland | League 2       | SC3   |
+| Germany | Bundesliga 1       | D1   |
+| Germany | Bundesliga 2       | D2   |
 
