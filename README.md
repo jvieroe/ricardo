@@ -29,4 +29,8 @@ Main branch:
 | Scotland | League 2       | SC3   |
 | Germany | Bundesliga 1       | D1   |
 | Germany | Bundesliga 2       | D2   |
+| Italy | Serie A       | I1   |
+| Italy | Serie B       | I2   |
+| Spain | La Liga Primera Division       | SP1   |
+| Spain | La Liga Segunda Division       | SP2   |
 
